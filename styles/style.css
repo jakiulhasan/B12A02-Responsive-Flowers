@@ -183,6 +183,7 @@
 .latest-deal-section {
   padding: 20px;
   text-align: center;
+  margin-bottom: 100px;
 }
 .latest-deal-section-title {
   font-size: 50px;
@@ -222,7 +223,7 @@
   border-radius: 20px;
 }
 .black-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
   border-radius: 20px;
 }
@@ -248,6 +249,47 @@
   grid-template-rows: 200px 200px;
   gap: 20px;
   row-gap: 20px;
+}
+
+/* join us section starts here */
+.join-us {
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  margin-bottom: 100px;
+}
+.join-us > div {
+  border-radius: 0px;
+}
+.join-us-form {
+  width: 80%;
+  padding: 200px 0px;
+  margin: 0 auto;
+  text-align: center;
+}
+.join-us-form h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: white;
+}
+.input-email {
+  width: 79%;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+}
+.input-email:focus {
+  outline: none;
+}
+
+.input-button {
+  width: 20%;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px;
+  background-color: var(--banner-title-color);
+  border: none;
+  color: white;
 }
 /* responsive here */
 @media screen and (max-width: 576px) {
@@ -292,7 +334,9 @@
     font-size: 16px;
     margin-bottom: 10px;
   }
-  .item-price {
+  .item-price,
+  .input-email,
+  .input-button {
     font-size: 16px;
   }
   .plants-love-section {
@@ -319,7 +363,21 @@
       "card-3";
     grid-template-rows: 200px 200px 200px;
   }
-  .card-align {
+  .card-align,
+  .join-us-form h1 {
     font-size: 20px;
+  }
+
+  .join-us-form {
+    padding: 65px 20px;
+    width: 100%;
+  }
+  .input-email {
+    padding: 15px;
+    width: 68%;
+  }
+  .input-button {
+    padding: 15px;
+    width: 30%;
   }
 }
