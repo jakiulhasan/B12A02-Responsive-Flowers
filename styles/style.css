@@ -37,6 +37,15 @@
   align-items: center;
 }
 
+.btn-primary {
+  width: 100%;
+  background-color: var(--banner-title-color);
+  border: none;
+  color: white;
+  padding: 20px 0px;
+  font-weight: 600;
+}
+
 /* Nav*/
 .nav {
   padding: 20px;
@@ -64,6 +73,12 @@
 .banner {
   padding: 20px;
 }
+.banner-left-column {
+  flex: 1;
+}
+.banner-right-column img {
+  width: 100%;
+}
 .banner-title {
   font-size: 65px;
   font-weight: bold;
@@ -78,6 +93,50 @@
 .banner-description {
   font-size: 22px;
   color: var(--description-color);
+}
+/* plants section */
+.plants-section {
+  padding: 20px;
+}
+.plants-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.plants-description {
+  font-size: 22px;
+  color: var(--description-color);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.plants-title span {
+  color: var(--banner-title-color);
+}
+.plants-section-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  row-gap: 30px;
+}
+.card {
+  text-align: center;
+}
+.item-image {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.item-name {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.item-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 /* responsive here */
@@ -95,12 +154,32 @@
   .banner-left-column {
     padding: 20px;
   }
-  .banner-title {
+  .banner-title,
+  .plants-title {
     font-size: 24px;
     margin-bottom: 13px;
   }
-  .banner-description {
+  .banner-description,
+  .plants-description {
     font-size: 14px;
     text-align: justify;
+  }
+  .plants-description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .plants-section-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-image {
+    width: 100%;
+  }
+  .item-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .item-price {
+    font-size: 16px;
   }
 }
