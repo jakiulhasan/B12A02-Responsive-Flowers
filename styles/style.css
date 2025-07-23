@@ -143,6 +143,7 @@
 .plants-love-section {
   padding: 20px;
   gap: 60px;
+  margin-bottom: 20px;
 }
 .plants-love-main-image {
   width: 100%;
@@ -177,6 +178,77 @@
 .plants-love-right-column-list-item li {
   margin-bottom: 20px;
 }
+
+/* <!-- Latest Deal Section --> */
+.latest-deal-section {
+  padding: 20px;
+  text-align: center;
+}
+.latest-deal-section-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.latest-deal-section-title span {
+  color: var(--banner-title-color);
+}
+
+.latest-deal-section-description {
+  color: var(--description-color);
+  width: 80%;
+  margin: 0px auto 20px auto;
+}
+
+/* latests-deal-cards */
+.card-1 {
+  background-image: url(../assets/deal-bloom.png);
+  grid-area: card-1;
+  background-size: cover;
+  border-radius: 20px;
+}
+.card-2 {
+  background-image: url(../assets/deal-ana.png);
+  grid-area: card-2;
+  height: 100%;
+  background-size: cover;
+  border-radius: 20px;
+}
+.card-3 {
+  background-image: url(../assets/deal-zabo.png);
+  grid-area: card-3;
+  font-size: 40px;
+  font-weight: bold;
+  background-size: cover;
+  border-radius: 20px;
+}
+.black-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  border-radius: 20px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-align {
+  align-content: center;
+  color: white;
+}
+.card-align h1 {
+  margin-bottom: 20px;
+}
+.card-align a {
+  color: white;
+}
+.deal-card {
+  display: grid;
+  grid-template-areas:
+    "card-1 card-3 card-3"
+    "card-2 card-3 card-3";
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+  row-gap: 20px;
+}
 /* responsive here */
 @media screen and (max-width: 576px) {
   .nav-menu {
@@ -194,14 +266,15 @@
   }
   .banner-title,
   .plants-title,
-  .plants-love-right-column-title {
+  .plants-love-right-column-title,
+  .latest-deal-section-title {
     font-size: 24px;
     margin-bottom: 13px;
   }
   .banner-description,
-  .plants-description {
+  .plants-description,
+  .latest-deal-section-description {
     font-size: 14px;
-    text-align: justify;
   }
   .plants-description {
     text-align: center;
@@ -237,5 +310,16 @@
   .plants-love-right-column-list-item {
     padding-left: 20px;
     font-size: 14px;
+  }
+
+  .deal-card {
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3";
+    grid-template-rows: 200px 200px 200px;
+  }
+  .card-align {
+    font-size: 20px;
   }
 }
