@@ -44,6 +44,12 @@
   color: white;
   padding: 20px 0px;
   font-weight: 600;
+  cursor: pointer;
+  transition: transform ease 0.5s;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: var(--menu-focus-color);
 }
 
 /* Nav*/
@@ -67,6 +73,11 @@
 .nav-menu ul li a {
   text-decoration: none;
   color: var(--menu-color);
+}
+
+.nav-cart a {
+  text-decoration: none;
+  color: var(--menu-focus-color);
 }
 
 /* banner starts here */
@@ -159,6 +170,15 @@
   width: 285px;
   right: -17%;
   top: -17%;
+  animation: spin-infinite 5s infinite;
+}
+@keyframes spin-infinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .plants-love-right-column {
   flex: 1;
