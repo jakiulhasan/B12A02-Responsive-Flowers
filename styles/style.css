@@ -170,6 +170,7 @@
   width: 285px;
   right: -17%;
   top: -17%;
+  filter: drop-shadow(-3px 4px 3px black);
   animation: spin-infinite 5s infinite;
 }
 @keyframes spin-infinite {
@@ -243,7 +244,7 @@
   border-radius: 20px;
 }
 .black-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   border-radius: 20px;
 }
@@ -316,7 +317,7 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  /* gap: 110px; */
+  padding: 20px;
 }
 .footer-left {
   width: 25%;
